@@ -1,14 +1,8 @@
-/* eslint-disable */
-// @ts-nocheck
-import type { FC } from 'react';
-
 interface IPage {
   prop?: unknown;
 }
 
-const Page: FC<IPage> = (props) => {
+export default function Page(props: IPage) {
   console.log('Page props:', props);
   return <div>Customers Page</div>;
-};
-
-export default Page;
+}
